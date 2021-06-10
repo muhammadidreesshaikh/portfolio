@@ -19,10 +19,6 @@ const routes: Routes = [
     loadChildren: () => import('./components/contact/contact.module').then(m => m.ContactModule)
   },
   {
-    path: 'portfolio',
-    loadChildren: () => import('./components/portfolio/portfolio.module').then(m => m.PortfolioModule)
-  },
-  {
     path: 'projects',
     loadChildren: () => import('./components/projects/projects.module').then(m => m.ProjectsModule)
   },
@@ -33,7 +29,7 @@ const routes: Routes = [
   {
     path: 'testimonials',
     loadChildren: () => import('./components/testimonials/testimonials.module').then(m => m.TestimonialsModule)
-  },
+  }
 ];
 
 @NgModule({
