@@ -1,0 +1,364 @@
+@import '../../../styles.scss';
+
+.banner{
+  background-image: url(../../../../src/assets/img/slider1.jpg);
+  width: 100%;
+  height: 92vh;
+  padding-top: 13%;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: soft-light;
+  background-color: #151515;
+  background-attachment: fixed;
+  h1{
+    font-size: 50px;
+    color: white;
+    font-weight: 600;
+  }
+  .btns{
+    margin-top: 8%;
+  }
+}
+
+.solution{
+  padding-top: 5%;
+  h3{
+    font-size: 25px;
+    font-weight: 600;
+  }
+  p{
+    font-size: 14px;
+    padding-top: 5px;
+    color: $gray;
+  }
+  .plain-card{
+    background: $default;
+    padding: 20px;
+    margin-top: 10px;
+    height: 150px;
+    position: relative;
+    i{
+      font-size: 35px;
+      float: right;
+      color: $white;
+      position: absolute;
+      right: 20px;
+      top: 15px;
+    }
+    h5{
+      font-size: 17px;
+      padding-top: 25%;
+      font-weight: 600;
+      color: $white;
+    }
+  }
+}
+
+.experience-employe{
+ padding-top: 5%;
+  position: relative;
+  img{
+    width: 100%;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 52%);
+  }
+  h3{
+    font-size: 25px;
+    font-weight: 600;
+    padding-top: 5%;
+  }
+  p{
+    font-size: 14px;
+    padding-top: 5px;
+    color: $gray;
+  }
+  .slap{
+    background: $default;
+    width: 35%;
+    height: 60px;
+    padding: 7px 20px;
+    position: absolute;
+    left: -15%;
+    top: 70%;
+    a{
+      font-size: 30px;
+      color: $white;
+    }
+    span{
+      font-size: 14px;
+      font-weight: 700;
+      color: $white;
+    }
+  }
+}
+
+.projects-card{
+  padding: 5% 0;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  h3{
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  p{
+    font-size: 14px;
+    color: $gray;
+    &.text{
+      padding-top: 5px;
+    }
+  }
+  .cards{
+    padding-top: 20px;
+    position: relative;
+    .cards-inner{
+      padding-top: 20px;
+      width: 100%;
+      height: 350px;
+      border-radius: 10px;
+      transition: 0.3s;
+      position: relative;
+      &:hover {
+        transform: scale(1.05);
+      }
+      .image{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgb(0 0 0 / 52%);
+      }
+      .middle{
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        p{
+          font-size: 9px;
+          padding: 5px 10px;
+          &.chip{
+            border-radius: 20px;
+            text-transform: uppercase;
+            background-color: #ffffff6b;
+            color: $white;
+          }
+        }
+        .project-name{
+          margin-top: 10px;
+          a{
+            background: $default;
+            color: $white;
+            font-size: 13px;
+            padding: 8px 25px;
+            border-radius: 20px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+.bar{
+  background-image: url(../../../assets/img/slider.webp);
+  width: 100%;
+  height: 35vh;
+  padding: 5% 0;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: soft-light;
+  background-color: #333333;
+  .bar-inner{
+    i{
+      background: $default;
+      padding: 10px;
+      font-size: 40px;
+      border-radius: 5px;
+      color: white;
+    }
+    h6{
+      font-size: 25px;
+      color: white;
+      font-weight: 600;
+    }
+    p{
+      font-size: 15px;
+      color: white;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.team{
+  padding: 5% 0;
+  position: relative;
+  width: 100%;
+  h3{
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  p{
+    font-size: 14px;
+    padding-top: 5px;
+    color: $gray;
+    text-align: center;
+  }
+  .inner{
+    .container1{
+      padding-top: 40px;
+      .image {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: 370px;
+        object-fit: cover;
+        object-position: center;
+        transition: .5s ease;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgb(0 0 0 / 52%);
+      }
+      .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      &:hover{
+        .image {
+          opacity: 0.3;
+        }
+      }
+      &:hover{
+        .middle{
+          opacity: 1;
+        }
+      }
+      .text{
+        color: $black;
+        cursor: pointer;
+        h4{
+          font-size: 16px;
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+        h6{
+          font-size: 13px;
+          padding-top: 7px;
+        }
+      }
+    }
+  }
+}
+
+.contact-detail{
+  padding-top: 40px;
+  background-color: #343353;
+  h3{
+    font-size: 25px;
+    font-weight: 600;
+    color: $white;
+    text-transform: uppercase;
+  }
+  p{
+    font-size: 14px;
+    padding-top: 5px;
+    color: $white;
+  }
+  img{
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    float: right;
+  }
+}
+
+.testimonies{
+  padding: 5% 0;
+  h3{
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  p{
+    font-size: 14px;
+    padding-top: 5px;
+    color: $gray;
+  }
+  .plain-card{
+    padding: 30px 25px;
+    width: 100%;
+    height: 235px;
+    p{
+      font-size: 13px;
+    }
+    .inner{
+      padding-top: 25px;
+      img{
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 50px;
+      }
+      span{
+        font-size: 10px;
+        padding: 0 1px;
+        &.checked{
+          color: $orange;
+        }
+      }
+      h6{
+        font-size: 15px;
+        font-weight: 600;
+      }
+      p{
+        color: $gray;
+        font-weight: 500;
+        &.name{
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
+
+.contact{
+  background-image: url(../../../assets/img/contact.jpg);
+  padding: 5% 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-blend-mode: soft-light;
+  background-color: #252525;
+
+  h3{
+    color: $white;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  p{
+    font-size: 14px;
+    padding-top: 5px;
+    color: $gray;
+    text-align: center;
+  }
+}
