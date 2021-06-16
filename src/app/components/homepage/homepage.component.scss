@@ -16,6 +16,9 @@
     font-size: 50px;
     color: white;
     font-weight: 600;
+    @include respond(mobile) {
+      font-size: 40px;
+    }
   }
   .btns{
     margin-top: 8%;
@@ -339,17 +342,10 @@
 }
 
 .contact{
-  background-image: url(../../../assets/img/contact.jpg);
+  background-color: #f5f5f5;
   padding: 5% 0;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-blend-mode: soft-light;
-  background-color: #252525;
-
   h3{
-    color: $white;
+    color: $black;
     font-size: 25px;
     font-weight: 600;
     text-transform: uppercase;
