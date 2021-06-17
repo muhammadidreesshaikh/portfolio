@@ -87,7 +87,7 @@ export class HomepageComponent implements OnInit {
     this.icons =[
       {
         id: 1,
-        icon: 'fas fa-clipboard-check',
+        icon: 'far fa-check-circle',
         number: '4500',
         name: 'PROJECT COMPLETED',
       },

@@ -11,11 +11,18 @@
   background-attachment: fixed;
   background-blend-mode: soft-light;
   background-color: #151515;
+  @include respond(mobile) {
+    padding: 7% 0;
+  }
   .logo{
     h3{
       font-size: 19px;
       font-weight: 700;
       color: $white;
+      @include respond(mobile) {
+        padding-top: 0;
+        font-size: 20px;
+      }
     }
     p{
       font-size: 12px;
@@ -26,12 +33,19 @@
       &.c-btn{
         font-size: 11px;
         padding: 9px 18px;
+        @include respond(mobile) {
+          font-size: 13px;
+        }
       }
     }
   }
   h3{
     font-size: 18px;
     color: $white;
+    @include respond(mobile) {
+      padding-top: 7%;
+      font-size: 20px;
+    }
   }
   p{
     font-size: 12px;
@@ -62,6 +76,9 @@
   }
   .social{
     float: right;
+    @include respond(mobile) {
+      float: unset;
+    }
     h3{
       font-size: 18px;
       color: $white;

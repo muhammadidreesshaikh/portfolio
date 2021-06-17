@@ -12,6 +12,12 @@
   background-blend-mode: soft-light;
   background-color: #151515;
   background-attachment: fixed;
+  @include respond(tablet) {
+    height: 50vh;
+  }
+  @include respond(mobile) {
+    height: 40vh;
+  }
   h1{
     font-size: 50px;
     color: white;
@@ -27,6 +33,9 @@
 
 .solution{
   padding-top: 5%;
+  @include respond(mobile) {
+    padding-top: 10%;
+  }
   h3{
     font-size: 25px;
     font-weight: 600;
@@ -35,6 +44,9 @@
     font-size: 14px;
     padding-top: 5px;
     color: $gray;
+    @include respond(tablet) {
+      font-size: 15px;
+    }
   }
   .plain-card{
     background: $default;
@@ -42,6 +54,12 @@
     margin-top: 10px;
     height: 150px;
     position: relative;
+    @include respond(tablet) {
+      margin-top: 25px;
+    }
+    @include respond(mobile) {
+      margin-top: 20px;
+    }
     i{
       font-size: 35px;
       float: right;
@@ -62,8 +80,10 @@
 .experience-employe{
  padding-top: 5%;
   position: relative;
+  @include respond(mobile) {
+    padding-top: 10%;
+  }
   img{
-    width: 100%;
     width: 100%;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgb(0 0 0 / 52%);
@@ -72,11 +92,21 @@
     font-size: 25px;
     font-weight: 600;
     padding-top: 5%;
+    @include respond(mobile) {
+      font-size: 20px;
+      padding-top: 10%;
+    }
   }
   p{
     font-size: 14px;
     padding-top: 5px;
     color: $gray;
+    @include respond(tablet) {
+      font-size: 15px;
+    }
+    @include respond(mobile) {
+      font-size: 14px;
+    }
   }
   .slap{
     background: $default;
@@ -86,6 +116,16 @@
     position: absolute;
     left: -15%;
     top: 70%;
+    @include respond(tablet) {
+      width: 27%;
+      left: 70%;
+      top: -35%;
+    }
+    @include respond(mobile) {
+      width: 50%;
+      left: 44%;
+      top: -22%;
+    }
     a{
       font-size: 30px;
       color: $white;
@@ -103,6 +143,9 @@
   position: relative;
   width: 100%;
   text-align: center;
+  @include respond(tablet) {
+    padding: 7% 0;
+  }
   h3{
     font-size: 25px;
     font-weight: 600;
@@ -177,13 +220,26 @@
   background-attachment: fixed;
   background-blend-mode: soft-light;
   background-color: #333333;
+  @include respond(tablet) {
+    height: 30vh;
+  }
+  @include respond(mobile) {
+    height: 42vh;
+  }
   .bar-inner{
+    @include respond(tablet) {
+      padding-top: 13px;
+    }
     i{
       background: $default;
       padding: 10px;
       font-size: 40px;
       border-radius: 5px;
       color: white;
+      @include respond(mobile) {
+        width: 60px;
+        height: auto;
+      }
     }
     h6{
       font-size: 25px;
@@ -202,7 +258,10 @@
 .team{
   padding: 5% 0;
   position: relative;
-  width: 100%;
+  // width: 100%;
+  @include respond(tablet) {
+    padding: 10% 0;
+  }
   h3{
     font-size: 25px;
     font-weight: 600;
@@ -270,6 +329,9 @@
 .contact-detail{
   padding-top: 40px;
   background-color: #343353;
+  @include respond(mobile) {
+    padding: 40px 0;
+  }
   h3{
     font-size: 25px;
     font-weight: 600;
@@ -287,11 +349,19 @@
     object-fit: cover;
     object-position: center;
     float: right;
+    @include respond(mobile) {
+      width: 400px;
+      height: 200px;
+      margin-top: 15%;
+    }
   }
 }
 
 .testimonies{
   padding: 5% 0;
+  @include respond(tablet) {
+    padding: 10% 0;
+  }
   h3{
     font-size: 25px;
     font-weight: 600;
@@ -303,38 +373,50 @@
     padding-top: 5px;
     color: $gray;
   }
-  .plain-card{
-    padding: 30px 25px;
-    width: 100%;
-    height: 235px;
-    p{
-      font-size: 13px;
+  .testimonies-inner{
+    padding-top: 5%;
+    @include respond(mobile) {
+      padding-top: 8px;
     }
-    .inner{
-      padding-top: 25px;
-      img{
-        width: 40px;
-        height: 40px;
-        object-fit: cover;
-        object-position: center;
-        border-radius: 50px;
+    .plain-card{
+      padding: 30px 25px;
+      width: 100%;
+      height: 235px;
+      @include respond(tablet) {
+        height: 280px;
       }
-      span{
-        font-size: 10px;
-        padding: 0 1px;
-        &.checked{
-          color: $orange;
-        }
-      }
-      h6{
-        font-size: 15px;
-        font-weight: 600;
+      @include respond(mobile) {
+        margin-top: 25px;
       }
       p{
-        color: $gray;
-        font-weight: 500;
-        &.name{
+        font-size: 13px;
+      }
+      .inner{
+        padding-top: 25px;
+        img{
+          width: 40px;
+          height: 40px;
+          object-fit: cover;
+          object-position: center;
+          border-radius: 50px;
+        }
+        span{
           font-size: 10px;
+          padding: 0 1px;
+          &.checked{
+            color: $orange;
+          }
+        }
+        h6{
+          font-size: 15px;
+          font-weight: 600;
+        }
+        p{
+          color: $gray;
+          font-weight: 500;
+          &.name{
+            font-size: 10px;
+          }
         }
       }
     }
@@ -344,6 +426,9 @@
 .contact{
   background-color: #f5f5f5;
   padding: 5% 0;
+  @include respond(tablet) {
+    padding: 10% 0;
+  }
   h3{
     color: $black;
     font-size: 25px;

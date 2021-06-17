@@ -1,6 +1,6 @@
 <div class="banner">
   <div class="row justify-content-center">
-    <div class=" col-12 col-lg-5">
+    <div class="col-12 col-md-8 col-lg-5">
       <h1>Talk is Cheap Show me the code.</h1>
       <div class="btns">
         <a class="c-btn pink mr-3">Get Started</a>
@@ -14,12 +14,12 @@
   <div class="solution">
     <div class="container">
       <div class="row">
-        <div class="col-6">
+        <div class="col-12 col-lg-6">
           <h3>WE SHAPE THE PERFECT SOLUTIONS</h3>
           <p>Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
         </div>
 
-        <div class="col-3" *ngFor="let item of data">
+        <div class="col-12 col-md-6 col-lg-3" *ngFor="let item of data">
           <div class="plain-card">
             <a><i class="{{item.icon}}"></i></a>
             <h5>{{item.name}}</h5>
@@ -34,11 +34,11 @@
   <div class="experience-employe">
     <div class="container">
       <div class="row">
-        <div class="col-6">
+        <div class="col-12 col-md-12 col-lg-6">
           <img src="../../../assets/img/image2.jpg">
         </div>
 
-        <div class="col-6">
+        <div class="col-12 col-md-12 col-lg-6">
           <h3>HIGHEST CREATIVE STANDARDS</h3>
           <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. </p>
 
@@ -62,21 +62,23 @@
   <div class="projects-card">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-8">
+        <div class="col-12 col-md-10 col-lg-8">
           <h3>Portfolio</h3>
           <p class="text">Lorem Ipsum has been the industry's standard dummy text. when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
         </div>
 
-        <div class="cards">
-          <div class="row">
-            <div class="col-4" *ngFor="let item of cards">
-              <div class="cards-inner">
-                <img src={{item.image}} class="image">
+        <div class="col-12">
+          <div class="cards">
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-4" *ngFor="let item of cards">
+                <div class="cards-inner">
+                  <img src={{item.image}} class="image">
 
-                <div class="middle">
-                  <p class="chip">{{item.stack}}</p>
-                  <div class="project-name">
-                    <a>{{item.name}}</a>
+                  <div class="middle">
+                    <p class="chip">{{item.stack}}</p>
+                    <div class="project-name">
+                      <a>{{item.name}}</a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -92,7 +94,7 @@
   <div class="bar">
     <div class="container">
       <div class="row">
-        <div class="col-3"  *ngFor="let item of icons">
+        <div class="col-12 col-md-6 col-lg-3"  *ngFor="let item of icons">
           <div class="bar-inner">
             <div class="row">
               <div class="col-3">
@@ -115,24 +117,27 @@
   <div class="team">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-8">
+        <div class="col-12 col-md-10 col-lg-8">
           <h3>TEAM MEMBERS</h3>
           <p>Lorem Ipsum has been the industry's standard dummy text. when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
         </div>
-        <div class="inner">
-          <div class="row">
-            <div class="col-3"  *ngFor="let item of profile">
-              <div class="container1">
-                  <img src={{item.image}} class="image" style="width:100%">
-                  <div class="middle">
-                    <div class="text">
-                      <h4>{{item.name}}</h4>
-                      <h6>{{item.text}}</h6>
-                      <div class="mt-3">
-                        <a class="small-chip">Profile</a>
+
+        <div class="col-12">
+          <div class="inner">
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-3"  *ngFor="let item of profile">
+                <div class="container1">
+                    <img src={{item.image}} class="image" style="width:100%">
+                    <div class="middle">
+                      <div class="text">
+                        <h4>{{item.name}}</h4>
+                        <h6>{{item.text}}</h6>
+                        <div class="mt-3">
+                          <a class="small-chip">Profile</a>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -146,7 +151,7 @@
   <div class="contact-detail">
     <div class="container">
       <div class="row">
-        <div class="col-6">
+        <div class="col-12 col-md-6 col-lg-6">
           <h3>Have a project on your mind.</h3>
           <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country.</p>
           <div class="mt-5">
@@ -154,7 +159,7 @@
           </div>
         </div>
 
-        <div class="col-6">
+        <div class="col-12 col-md-6 col-lg-6">
           <img src="../../../assets/img/gif.gif">
         </div>
       </div>
@@ -166,15 +171,15 @@
   <div class="testimonies">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-8">
+        <div class="col-12 col-md-10 col-lg-8">
           <h3>TESTIMONIES</h3>
           <p class="text-center">The industry's standard dummy text. when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
         </div>
       </div>
 
-      <div class="testimonies-inner pt-5">
+      <div class="testimonies-inner">
         <div class="row">
-          <div class="col-4" *ngFor="let item of review">
+          <div class="col-12 col-md-4 col-lg-4" *ngFor="let item of review">
             <div class="plain-card">
               <p class="testimonies-text">{{item.text}}</p>
               <div class="inner">
@@ -207,7 +212,7 @@
     <div class="container">
       <div class="row justify-content-center">
 
-        <div class="col-8">
+        <div class="col-12 col-md-10 col-lg-8">
           <h3>Contact Us</h3>
           <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country.</p>
         </div>
@@ -215,13 +220,13 @@
         <div class="col-12">
           <form class="mt-5">
             <div class="row">
-              <div class="col-6">
+              <div class="col-12 col-md-6 col-lg-6">
                 <div class="form-group">
                   <input type="name" class="form-control" placeholder="Your Name">
                 </div>
               </div>
 
-              <div class="col-6">
+              <div class="col-12 col-md-6 col-lg-6">
                 <div class="form-group">
                   <input type="email" class="form-control" placeholder="Your Email">
                 </div>
