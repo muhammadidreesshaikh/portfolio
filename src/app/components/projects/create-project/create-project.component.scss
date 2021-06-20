@@ -1,0 +1,21 @@
+@import '../../../../styles.scss';
+
+.create-project{
+  padding: 40px 0;
+  h6{
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .add-img {
+    text-align: center;
+    img {
+      cursor: pointer;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      object-position: center;
+      box-shadow: 0 0 10px #e7e7e7;
+      border-radius: 25px;
+    }
+  }
+}

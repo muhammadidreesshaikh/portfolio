@@ -1,1 +1,37 @@
-<p>testimonial-listing works!</p>
+<div class="testimonies">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-8">
+        <h3>TESTIMONIES</h3>
+        <p class="text-center">The industry's standard dummy text. when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      </div>
+    </div>
+
+    <div class="testimonies-inner">
+      <div class="row">
+        <div class="col-12 col-md-4 col-lg-4" *ngFor="let item of review">
+          <div class="plain-card">
+            <p class="testimonies-text">{{item.text}}</p>
+            <div class="inner">
+              <div class="row">
+                <div class="col-3">
+                  <img src={{item.image}}>
+                </div>
+
+                <div class="col-9">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <h6>{{item.name}}</h6>
+                  <p class="name">{{item.job}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

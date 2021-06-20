@@ -1,1 +1,29 @@
-<p>projects-listing works!</p>
+<div class="projects-card">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-8">
+        <h3>Projects</h3>
+        <p class="text">Lorem Ipsum has been the industry's standard dummy text. when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      </div>
+
+      <div class="col-12">
+        <div class="cards">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-4" *ngFor="let item of cards">
+              <div class="cards-inner">
+                <img src={{item.image}} class="image">
+
+                <div class="middle">
+                  <p class="chip">{{item.stack}}</p>
+                  <div class="project-name">
+                    <a>{{item.name}}</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

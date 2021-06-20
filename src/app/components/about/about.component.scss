@@ -1,0 +1,39 @@
+@import '../../../styles.scss';
+
+.about{
+  padding: 40px 0;
+  h3{
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  p{
+    font-size: 14px;
+    color: $gray;
+    padding-top: 5px;
+  }
+  .inner{
+    padding-top: 5%;
+    img{
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgb(0 0 0 / 52%);
+    }
+    h3{
+      font-size: 25px;
+      font-weight: 600;
+      text-transform: uppercase;
+      @include respond(tablet) {
+        padding-top: 5%;
+      }
+    }
+    p{
+      font-size: 15px;
+      color: $gray;
+      padding-top: 5px;
+    }
+  }
+}

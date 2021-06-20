@@ -1,0 +1,72 @@
+@import '../../../../styles.scss';
+
+.projects-card{
+  padding: 40px 0;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  @include respond(tablet) {
+    padding: 7% 0;
+  }
+  h3{
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  p{
+    font-size: 14px;
+    color: $gray;
+    &.text{
+      padding-top: 5px;
+    }
+  }
+  .cards{
+    padding-top: 20px;
+    position: relative;
+    .cards-inner{
+      padding-top: 20px;
+      width: 100%;
+      height: 350px;
+      border-radius: 10px;
+      transition: 0.3s;
+      position: relative;
+      &:hover {
+        transform: scale(1.05);
+      }
+      .image{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgb(0 0 0 / 52%);
+      }
+      .middle{
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        p{
+          font-size: 9px;
+          padding: 5px 10px;
+          &.chip{
+            border-radius: 20px;
+            text-transform: uppercase;
+            background-color: #ffffff6b;
+            color: $white;
+          }
+        }
+        .project-name{
+          margin-top: 10px;
+          a{
+            background: $default;
+            color: $white;
+            font-size: 13px;
+            padding: 8px 25px;
+            border-radius: 20px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

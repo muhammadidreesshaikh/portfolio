@@ -1,1 +1,30 @@
-<p>service-listing works!</p>
+<div class="service-listing">
+  <div class="container">
+    <div class="row justify-content-center">
+
+      <div class="col-12 col-md-10 col-lg-8">
+        <h3 class="text-center">Services</h3>
+        <p class="text-center">Lorem Ipsum has been the industry's standard dummy text. when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      </div>
+
+      <div class="col-12" *ngFor="let item of data">
+        <div class="inner">
+          <div class="row">
+            <div class="col-12 col-md-12 col-lg-6">
+              <img src={{item.image}}>
+            </div>
+
+            <div class="col-12 col-md-12 col-lg-6">
+              <h3>{{item.name}}</h3>
+              <p>{{item.text}}</p>
+              <div class="mt-4">
+                <a class="c-btn pink">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

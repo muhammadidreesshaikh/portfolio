@@ -37,11 +37,6 @@ export class HomepageComponent implements OnInit {
         id: 4,
         icon: 'fas fa-bezier-curve',
         name: 'GRAPHIC DESIGN',
-      },
-      {
-        id: 5,
-        icon: 'fas fa-server',
-        name: 'SERVER DOMAIN',
       }
     ]
 
