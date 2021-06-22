@@ -83,57 +83,73 @@
   @include respond(mobile) {
     padding-top: 10%;
   }
-  img{
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgb(0 0 0 / 52%);
-  }
   h3{
     font-size: 25px;
     font-weight: 600;
-    padding-top: 5%;
-    @include respond(mobile) {
-      font-size: 20px;
-      padding-top: 10%;
-    }
+    text-transform: uppercase;
   }
   p{
     font-size: 14px;
     padding-top: 5px;
     color: $gray;
-    @include respond(tablet) {
-      font-size: 15px;
-    }
-    @include respond(mobile) {
-      font-size: 14px;
-    }
   }
-  .slap{
-    background: $default;
-    width: 35%;
-    height: 60px;
-    padding: 7px 20px;
-    position: absolute;
-    left: -15%;
-    top: 70%;
-    @include respond(tablet) {
-      width: 27%;
-      left: 70%;
-      top: -35%;
-    }
+  .main-inner{
+    padding-top: 5%;
     @include respond(mobile) {
-      width: 50%;
-      left: 44%;
-      top: -22%;
+      padding-top: 7%;
     }
-    a{
-      font-size: 30px;
-      color: $white;
+    img{
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgb(0 0 0 / 52%);
     }
-    span{
+    h3{
+      font-size: 25px;
+      font-weight: 600;
+      padding-top: 5%;
+      @include respond(mobile) {
+        font-size: 20px;
+        padding-top: 10%;
+      }
+    }
+    p{
       font-size: 14px;
-      font-weight: 700;
-      color: $white;
+      padding-top: 5px;
+      color: $gray;
+      @include respond(tablet) {
+        font-size: 15px;
+      }
+      @include respond(mobile) {
+        font-size: 14px;
+      }
+    }
+    .slap{
+      background: $default;
+      width: 35%;
+      height: 60px;
+      padding: 7px 20px;
+      position: absolute;
+      left: -15%;
+      top: 70%;
+      @include respond(tablet) {
+        width: 27%;
+        left: 70%;
+        top: -35%;
+      }
+      @include respond(mobile) {
+        width: 50%;
+        left: 44%;
+        top: -22%;
+      }
+      a{
+        font-size: 30px;
+        color: $white;
+      }
+      span{
+        font-size: 14px;
+        font-weight: 700;
+        color: $white;
+      }
     }
   }
 }

@@ -1,0 +1,14 @@
+@import '../../../styles.scss';
+
+.support{
+  padding: 40px 0;
+  h3{
+    font-size: 22px;
+    font-weight: 600;
+  }
+  p{
+    font-size: 15px;
+    color: $gray;
+    padding-top: 10px;
+  }
+}

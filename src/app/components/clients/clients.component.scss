@@ -1,0 +1,31 @@
+@import '../../../styles.scss';
+
+.client{
+  padding: 45px 0;
+  h3{
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  p{
+    font-size: 14px;
+    color: $gray;
+    padding-top: 5px;
+  }
+  .client-inner{
+    padding-top: 30px;
+    img{
+      width: 100px;
+      height: auto;
+      object-fit: cover;
+      object-position: center;
+      padding: 30% 0;
+      transition: 0.3s;
+      display: block;
+      margin: auto;
+      &:hover {
+        transform: scale(1.20);
+      }
+    }
+  }
+}
