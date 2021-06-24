@@ -21,6 +21,9 @@
       object-position: center;
       border-radius: 10px;
       box-shadow: 0 5px 15px rgb(0 0 0 / 52%);
+      @include respond(mobile) {
+        height: 300px;
+      }
     }
     h3{
       font-size: 25px;
@@ -28,6 +31,11 @@
       text-transform: uppercase;
       @include respond(tablet) {
         padding-top: 5%;
+        font-size: 25px;
+      }
+      @include respond(mobile) {
+        padding-top: 7%;
+        font-size: 21px;
       }
     }
     p{
